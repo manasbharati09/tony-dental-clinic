@@ -36,7 +36,7 @@
 
 html,
 body {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family: "Poppins", Arial, sans-serif;
   background-color: var(--background);
   color: var(--text);
@@ -193,8 +193,13 @@ nav.active {
     padding: 20px 0px 20px 0px;
   }
 
+  .nav-links a:hover {
+    color: inherit;
+    background-color: var(--white);
+  }
   .hospital-logo a {
-    display: none;
+    display: block;
+    font-size: 18px;
   }
 
   .menu-btn {
@@ -416,14 +421,13 @@ main {
   }
 }
 
-
 /* -------------------------------
 -------Section Wrapper---------- */
 
 .services-section {
   padding: 80px 20px;
   background-color: var(--background);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .services-container {
@@ -538,244 +542,231 @@ main {
 ========================= */
 
 .our-team {
-    padding: 80px 8%;
-    background: #f8fbff;
+  padding: 80px 8%;
+  background: #f8fbff;
 }
 
 /* Section Title */
 
 .section-title {
-    max-width: 650px;
-    margin: 0 auto 50px;
-    text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  text-align: center;
 }
 
 .section-title span {
-    display: inline-block;
-    margin-bottom: 10px;
-    color: #2563eb;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .section-title h2 {
-    margin-bottom: 15px;
-    color: #102a43;
-    font-size: 36px;
-    font-weight: 700;
+  margin-bottom: 15px;
+  color: #102a43;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .section-title p {
-    color: #64748b;
-    font-size: 16px;
-    line-height: 1.7;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
 }
-
 
 /* Team Container */
 
 .team-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
-
 
 /* Team Card */
 
 .team-card {
-    overflow: hidden;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .team-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
 }
-
 
 /* Doctor Image */
 
 .doctor-image {
-    height: 300px;
-    overflow: hidden;
-    background: #eaf2ff;
+  height: 300px;
+  overflow: hidden;
+  background: #eaf2ff;
 }
 
 .doctor-image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    display: block;
+  display: block;
 
-    object-fit: cover;
+  object-fit: cover;
 
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
 .team-card:hover .doctor-image img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
 
 /* Doctor Information */
 
 .doctor-info {
-    padding: 25px;
+  padding: 25px;
 }
 
 .doctor-info h3 {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 
-    color: #102a43;
-    font-size: 22px;
+  color: #102a43;
+  font-size: 22px;
 }
 
 .designation {
-    display: block;
-    margin-bottom: 15px;
+  display: block;
+  margin-bottom: 15px;
 
-    color: #2563eb;
-    font-size: 14px;
-    font-weight: 600;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .doctor-info p {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
 }
-
 
 /* Doctor Details */
 
 .doctor-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .doctor-details span {
-    padding: 6px 10px;
+  padding: 6px 10px;
 
-    background: #eff6ff;
-    color: #2563eb;
+  background: #eff6ff;
+  color: #2563eb;
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    font-size: 12px;
-    font-weight: 600;
+  font-size: 12px;
+  font-weight: 600;
 }
-
 
 /* Profile Button */
 
 .doctor-link {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 
-    padding: 10px 18px;
+  padding: 10px 18px;
 
-    background: #2563eb;
-    color: #ffffff;
+  background: #2563eb;
+  color: #ffffff;
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .doctor-link:hover {
-    background: #1d4ed8;
+  background: #1d4ed8;
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
+  .our-team {
+    padding: 70px 5%;
+  }
 
-    .our-team {
-        padding: 70px 5%;
-    }
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .team-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .doctor-image {
-        height: 280px;
-    }
-
+  .doctor-image {
+    height: 280px;
+  }
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 600px) {
-
-    .our-team {
-        padding: 60px 20px;
-    }
-
-    .section-title {
-        margin-bottom: 35px;
-    }
-
-    .section-title h2 {
-        font-size: 30px;
-    }
-
-    .section-title p {
-        font-size: 14px;
-    }
-
-    .team-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .doctor-image {
-      height: 320px;
-    }
-    
-    .doctor-info {
-      padding: 22px;
-    }
-    
+  .our-team {
+    padding: 60px 20px;
   }
-  
-  /* =========================================
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .doctor-image {
+    height: 320px;
+  }
+
+  .doctor-info {
+    padding: 22px;
+  }
+}
+
+/* =========================================
   SERVICES PAGE
   ========================================= */
-  
-  .services-page {
+
+.services-page {
   background: #eef6ff;
   color: #1e293b;
 }
-
 
 /* =========================================
 COMMON CONTAINER
@@ -785,7 +776,6 @@ COMMON CONTAINER
   width: min(1200px, 92%);
   margin: 0 auto;
 }
-
 
 /* =========================================
 SERVICES HERO
@@ -826,7 +816,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* =========================================
    SERVICES OVERVIEW
 ========================================= */
@@ -854,7 +843,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* =========================================
    SERVICES GRID
 ========================================= */
@@ -864,7 +852,6 @@ SERVICES HERO
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
-
 
 /* =========================================
    SERVICE CARD
@@ -884,7 +871,6 @@ SERVICES HERO
   box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
 }
 
-
 /* Card Image */
 
 .service-card > img {
@@ -893,7 +879,6 @@ SERVICES HERO
   height: 220px;
   object-fit: cover;
 }
-
 
 /* Card Content */
 
@@ -914,7 +899,6 @@ SERVICES HERO
   line-height: 1.7;
 }
 
-
 /* Learn More */
 
 .service-card-content a {
@@ -930,7 +914,6 @@ SERVICES HERO
   color: #1d4ed8;
   transform: translateX(4px);
 }
-
 
 /* =========================================
    DETAILED SERVICES
@@ -949,7 +932,6 @@ SERVICES HERO
   border-bottom: none;
 }
 
-
 /* =========================================
    DETAIL GRID
 ========================================= */
@@ -961,13 +943,11 @@ SERVICES HERO
   gap: 70px;
 }
 
-
 /* Reverse Layout */
 
 .service-detail-grid.reverse {
   grid-template-columns: 1fr 1fr;
 }
-
 
 /* =========================================
    DETAIL IMAGE
@@ -976,7 +956,7 @@ SERVICES HERO
 .service-detail-image {
   overflow: hidden;
   border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
 }
 
 .service-detail-image img {
@@ -990,7 +970,6 @@ SERVICES HERO
 .service-detail-image:hover img {
   transform: scale(1.04);
 }
-
 
 /* =========================================
    DETAIL CONTENT
@@ -1014,7 +993,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* =========================================
    DETAIL SUB HEADING
 ========================================= */
@@ -1024,7 +1002,6 @@ SERVICES HERO
   color: #1e293b;
   font-size: 20px;
 }
-
 
 /* =========================================
    SERVICE LIST
@@ -1055,7 +1032,6 @@ SERVICES HERO
   font-size: 16px;
 }
 
-
 /* =========================================
    BOOK APPOINTMENT BUTTON
 ========================================= */
@@ -1078,13 +1054,11 @@ SERVICES HERO
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 992px) {
-
   .services-hero {
     padding: 80px 0 65px;
   }
@@ -1119,17 +1093,14 @@ SERVICES HERO
   }
 }
 
-
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
-
   .services-page-container {
     width: 90%;
   }
-
 
   /* Hero */
 
@@ -1145,7 +1116,6 @@ SERVICES HERO
     font-size: 15px;
   }
 
-
   /* Overview */
 
   .services-overview {
@@ -1160,7 +1130,6 @@ SERVICES HERO
     font-size: 30px;
   }
 
-
   /* Cards */
 
   .services-grid {
@@ -1171,7 +1140,6 @@ SERVICES HERO
   .service-card > img {
     height: 230px;
   }
-
 
   /* Details */
 
@@ -1185,7 +1153,6 @@ SERVICES HERO
     gap: 35px;
   }
 
-
   /* Image */
 
   .service-detail-image {
@@ -1195,7 +1162,6 @@ SERVICES HERO
   .service-detail-image img {
     height: 300px;
   }
-
 
   /* Content */
 
@@ -1213,13 +1179,11 @@ SERVICES HERO
   }
 }
 
-
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 480px) {
-
   .services-hero {
     padding: 50px 0 40px;
   }
@@ -1232,7 +1196,6 @@ SERVICES HERO
     font-size: 14px;
   }
 
-
   .services-overview {
     padding: 50px 0;
   }
@@ -1241,7 +1204,6 @@ SERVICES HERO
     font-size: 27px;
   }
 
-
   .service-card-content {
     padding: 20px;
   }
@@ -1249,7 +1211,6 @@ SERVICES HERO
   .service-card > img {
     height: 200px;
   }
-
 
   .service-detail {
     padding: 50px 0;
@@ -1281,7 +1242,6 @@ SERVICES HERO
   width: min(1200px, 92%);
   margin: 0 auto;
 }
-
 
 /* =========================================
    ABOUT HERO
@@ -1318,7 +1278,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* =========================================
    ABOUT CLINIC
 ========================================= */
@@ -1335,13 +1294,12 @@ SERVICES HERO
   gap: 70px;
 }
 
-
 /* Image */
 
 .about-clinic-image {
   overflow: hidden;
   border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
 }
 
 .about-clinic-image img {
@@ -1355,7 +1313,6 @@ SERVICES HERO
 .about-clinic-image:hover img {
   transform: scale(1.04);
 }
-
 
 /* Content */
 
@@ -1386,7 +1343,6 @@ SERVICES HERO
   font-size: 16px;
   line-height: 1.8;
 }
-
 
 /* =========================================
    ABOUT FEATURES
@@ -1430,7 +1386,6 @@ SERVICES HERO
   line-height: 1.5;
 }
 
-
 /* =========================================
    MISSION & VISION
 ========================================= */
@@ -1457,7 +1412,7 @@ SERVICES HERO
 
 .mission-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.10);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
 }
 
 .mission-icon {
@@ -1484,7 +1439,6 @@ SERVICES HERO
   font-size: 15px;
   line-height: 1.8;
 }
-
 
 /* =========================================
    SECTION HEADER
@@ -1518,7 +1472,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* =========================================
    WHY CHOOSE US
 ========================================= */
@@ -1546,7 +1499,7 @@ SERVICES HERO
 .why-card:hover {
   transform: translateY(-7px);
   border-color: #bfdbfe;
-  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.10);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
 }
 
 .why-icon {
@@ -1573,7 +1526,6 @@ SERVICES HERO
   font-size: 14px;
   line-height: 1.7;
 }
-
 
 /* =========================================
    OUR TEAM
@@ -1603,7 +1555,6 @@ SERVICES HERO
   box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
 }
 
-
 /* Team Image */
 
 .team-image {
@@ -1621,7 +1572,6 @@ SERVICES HERO
 .team-card:hover .team-image img {
   transform: scale(1.05);
 }
-
 
 /* Team Content */
 
@@ -1648,7 +1598,6 @@ SERVICES HERO
   color: #64748b;
   font-size: 14px;
 }
-
 
 /* =========================================
    ABOUT CTA
@@ -1689,7 +1638,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* CTA Button */
 
 .about-cta .appointment-btn {
@@ -1701,13 +1649,11 @@ SERVICES HERO
   background: #eff6ff;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 992px) {
-
   .about-hero {
     padding: 80px 0 70px;
   }
@@ -1715,7 +1661,6 @@ SERVICES HERO
   .about-hero h1 {
     font-size: 40px;
   }
-
 
   .about-clinic {
     padding: 75px 0;
@@ -1733,11 +1678,9 @@ SERVICES HERO
     font-size: 31px;
   }
 
-
   .why-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
 
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1748,20 +1691,16 @@ SERVICES HERO
     width: calc(50% - 15px);
     margin: 0 auto;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
-
   .about-container {
     width: 90%;
   }
-
 
   /* Hero */
 
@@ -1776,7 +1715,6 @@ SERVICES HERO
   .about-hero p {
     font-size: 15px;
   }
-
 
   /* About Clinic */
 
@@ -1801,13 +1739,11 @@ SERVICES HERO
     font-size: 30px;
   }
 
-
   /* Features */
 
   .about-features {
     grid-template-columns: 1fr;
   }
-
 
   /* Mission */
 
@@ -1819,7 +1755,6 @@ SERVICES HERO
     grid-template-columns: 1fr;
   }
 
-
   /* Section Header */
 
   .about-section-header {
@@ -1830,7 +1765,6 @@ SERVICES HERO
     font-size: 30px;
   }
 
-
   /* Why Choose */
 
   .why-choose-us {
@@ -1840,7 +1774,6 @@ SERVICES HERO
   .why-grid {
     grid-template-columns: 1fr;
   }
-
 
   /* Team */
 
@@ -1861,7 +1794,6 @@ SERVICES HERO
     height: 320px;
   }
 
-
   /* CTA */
 
   .about-cta {
@@ -1875,16 +1807,13 @@ SERVICES HERO
   .about-cta-content p {
     font-size: 15px;
   }
-
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 480px) {
-
   .about-hero {
     padding: 50px 0 45px;
   }
@@ -1896,7 +1825,6 @@ SERVICES HERO
   .about-hero p {
     font-size: 14px;
   }
-
 
   .about-clinic {
     padding: 50px 0;
@@ -1914,11 +1842,9 @@ SERVICES HERO
     font-size: 14px;
   }
 
-
   .mission-card {
     padding: 30px 22px;
   }
-
 
   .about-section-header h2 {
     font-size: 27px;
@@ -1928,16 +1854,13 @@ SERVICES HERO
     font-size: 14px;
   }
 
-
   .why-card {
     padding: 25px 20px;
   }
 
-
   .team-image img {
     height: 280px;
   }
-
 
   .about-cta {
     padding: 55px 0;
@@ -1951,7 +1874,6 @@ SERVICES HERO
     width: 100%;
     text-align: center;
   }
-
 }
 
 /* =========================================
@@ -1968,7 +1890,6 @@ SERVICES HERO
   margin: 0 auto;
 }
 
-
 /* =========================================
    CONTACT HERO
 ========================================= */
@@ -1976,7 +1897,7 @@ SERVICES HERO
 .contact-hero {
   padding: 100px 0 85px;
   text-align: center;
-  background-image: url('../assets/images/about/clinic.webp');
+  background-image: url("../assets/images/about/clinic.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2010,7 +1931,6 @@ SERVICES HERO
   line-height: 1.8;
 }
 
-
 /* =========================================
    CONTACT SECTION
 ========================================= */
@@ -2026,7 +1946,6 @@ SERVICES HERO
   gap: 70px;
   align-items: start;
 }
-
 
 /* =========================================
    CONTACT INFORMATION
@@ -2049,7 +1968,6 @@ SERVICES HERO
   font-size: 16px;
   line-height: 1.8;
 }
-
 
 /* =========================================
    CONTACT ITEM
@@ -2087,7 +2005,6 @@ SERVICES HERO
   line-height: 1.6;
 }
 
-
 /* =========================================
    CONTACT FORM WRAPPER
 ========================================= */
@@ -2116,7 +2033,6 @@ SERVICES HERO
   line-height: 1.7;
 }
 
-
 /* =========================================
    FORM
 ========================================= */
@@ -2136,7 +2052,6 @@ SERVICES HERO
   grid-column: 1 / -1;
 }
 
-
 /* =========================================
    LABEL
 ========================================= */
@@ -2147,7 +2062,6 @@ SERVICES HERO
   font-size: 14px;
   font-weight: 600;
 }
-
 
 /* =========================================
    INPUT / SELECT / TEXTAREA
@@ -2173,16 +2087,14 @@ SERVICES HERO
   color: #94a3b8;
 }
 
-
 /* Focus */
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
-
 
 /* Textarea */
 
@@ -2191,13 +2103,11 @@ SERVICES HERO
   resize: vertical;
 }
 
-
 /* Select */
 
 .form-group select {
   cursor: pointer;
 }
-
 
 /* =========================================
    SUBMIT BUTTON
@@ -2238,7 +2148,6 @@ SERVICES HERO
   font-size: 13px;
 }
 
-
 /* =========================================
    FORM SUCCESS MESSAGE
 ========================================= */
@@ -2257,7 +2166,6 @@ SERVICES HERO
   font-size: 14px;
   line-height: 1.5;
 }
-
 
 /* =========================================
    MAP SECTION
@@ -2292,13 +2200,11 @@ SERVICES HERO
   border: 0;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 992px) {
-
   .contact-hero {
     padding: 80px 0 70px;
   }
@@ -2323,20 +2229,16 @@ SERVICES HERO
   .contact-form-wrapper {
     max-width: 800px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
-
   .contact-container {
     width: 90%;
   }
-
 
   /* Hero */
 
@@ -2352,7 +2254,6 @@ SERVICES HERO
     font-size: 15px;
   }
 
-
   /* Contact */
 
   .contact-section {
@@ -2362,7 +2263,6 @@ SERVICES HERO
   .contact-info h2 {
     font-size: 30px;
   }
-
 
   /* Form */
 
@@ -2387,7 +2287,6 @@ SERVICES HERO
     grid-column: auto;
   }
 
-
   /* Map */
 
   .map-section {
@@ -2401,16 +2300,13 @@ SERVICES HERO
   .map-wrapper {
     height: 300px;
   }
-
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 480px) {
-
   .contact-hero {
     padding: 50px 0 45px;
   }
@@ -2423,7 +2319,6 @@ SERVICES HERO
     font-size: 14px;
   }
 
-
   .contact-section {
     padding: 50px 0;
   }
@@ -2435,7 +2330,6 @@ SERVICES HERO
   .contact-info > p {
     font-size: 14px;
   }
-
 
   .contact-form-wrapper {
     padding: 25px 18px;
@@ -2450,7 +2344,6 @@ SERVICES HERO
     font-size: 14px;
   }
 
-
   .contact-item {
     gap: 13px;
   }
@@ -2461,11 +2354,9 @@ SERVICES HERO
     font-size: 16px;
   }
 
-
   .map-wrapper {
     height: 250px;
   }
-
 }
 
 /* =========================================
@@ -2477,7 +2368,6 @@ SERVICES HERO
   color: #ffffff;
 }
 
-
 /* =========================================
    FOOTER CONTAINER
 ========================================= */
@@ -2486,7 +2376,6 @@ SERVICES HERO
   width: min(1200px, 92%);
   margin: 0 auto;
 }
-
 
 /* =========================================
    FOOTER GRID
@@ -2498,7 +2387,6 @@ SERVICES HERO
   gap: 50px;
   padding: 70px 0 55px;
 }
-
 
 /* =========================================
    FOOTER LOGO
@@ -2522,7 +2410,6 @@ SERVICES HERO
   font-size: 25px;
 }
 
-
 /* =========================================
    FOOTER ABOUT
 ========================================= */
@@ -2535,7 +2422,6 @@ SERVICES HERO
   font-size: 14px;
   line-height: 1.8;
 }
-
 
 /* =========================================
    SOCIAL ICONS
@@ -2569,7 +2455,6 @@ SERVICES HERO
   transform: translateY(-3px);
 }
 
-
 /* =========================================
    FOOTER HEADINGS
 ========================================= */
@@ -2581,7 +2466,6 @@ SERVICES HERO
   font-size: 18px;
   font-weight: 600;
 }
-
 
 /* =========================================
    FOOTER LINKS
@@ -2608,7 +2492,6 @@ SERVICES HERO
   padding-left: 5px;
   color: #ffffff;
 }
-
 
 /* =========================================
    FOOTER CONTACT
@@ -2644,7 +2527,6 @@ SERVICES HERO
   color: #ffffff;
 }
 
-
 /* =========================================
    FOOTER BOTTOM
 ========================================= */
@@ -2666,7 +2548,6 @@ SERVICES HERO
   font-size: 13px;
 }
 
-
 /* =========================================
    BOTTOM LINKS
 ========================================= */
@@ -2687,13 +2568,11 @@ SERVICES HERO
   color: #ffffff;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 992px) {
-
   .footer-grid {
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 40px;
@@ -2702,16 +2581,13 @@ SERVICES HERO
   .footer-contact {
     grid-column: 1 / -1;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
-
   .footer-container {
     width: 90%;
   }
@@ -2735,16 +2611,13 @@ SERVICES HERO
     gap: 15px;
     text-align: center;
   }
-
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 480px) {
-
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -2763,5 +2636,4 @@ SERVICES HERO
     flex-direction: column;
     gap: 8px;
   }
-
 }
